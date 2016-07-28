@@ -12,3 +12,5 @@ socket.on('tweet', function (tweet) {
 socket.on('disconnect', function () {
   console.log('disconnected');
 })
+
+socket.emit('customevent', {user: 'customevent', text: 'this is custom event'});
